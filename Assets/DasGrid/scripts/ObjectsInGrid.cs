@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ObjectsInGrid
 {
-    public GameObject entity;
+    public string entity;
     public Vector3 rotation;
 
-    public bool IsEmpty => entity == null;
+    public bool IsEmpty => string.IsNullOrEmpty(entity);
     public ObjectsInGrid()
     {
         entity = null;
@@ -14,7 +14,7 @@ public class ObjectsInGrid
     public override string ToString()
     {
         if (IsEmpty) return "empty";
-        string name = entity != null ? entity.name : "?";
+        string name = entity != null ? entity : "?";
         return $"{name}\n{rotation.y:F0}°";
     }
 }

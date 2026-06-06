@@ -130,8 +130,9 @@ GameObject:
   - component: {fileID: 60518045}
   - component: {fileID: 60518044}
   - component: {fileID: 60518046}
+  - component: {fileID: 60518047}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: GridStructures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,6 +177,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd809863e72480542ab19f4dcbd03765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridDrawer
+--- !u!114 &60518047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60518043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac69a37cc0f54d458937b25c5a0ae6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridSpawner
+  entities:
+  - entityName: chest
+    prefab: {fileID: 8057431600274244032, guid: 88f4b051f35c0e643a7efefcfe7610fb, type: 3}
+  - entityName: floor
+    prefab: {fileID: 9121252732928449034, guid: 09d6e6e594ba5994eb8a283920a27ed2, type: 3}
+  - entityName: wall
+    prefab: {fileID: 6068649498992975658, guid: b151c616be667224a876c904d193ecd1, type: 3}
+  - entityName: column
+    prefab: {fileID: 6068649498992975658, guid: b151c616be667224a876c904d193ecd1, type: 3}
+--- !u!1 &186597027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186597031}
+  - component: {fileID: 186597030}
+  - component: {fileID: 186597028}
+  - component: {fileID: 186597032}
+  m_Layer: 0
+  m_Name: Gridinteractables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &186597028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186597027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd809863e72480542ab19f4dcbd03765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridDrawer
+--- !u!114 &186597030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186597027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1f0e2f4e8c9fd418477d08ed650056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::interactablemap
+--- !u!4 &186597031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186597027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.11545, y: -0.1, z: 18.21141}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186597032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186597027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312bd6c71f3545140bb6136a8e206a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::interactablespawner
+  entities:
+  - entityName: enemy
+    prefab: {fileID: 1425280344954907447, guid: 233200a7156b837448923e3f0b149447, type: 3}
+  - entityName: chest
+    prefab: {fileID: 8057431600274244032, guid: 88f4b051f35c0e643a7efefcfe7610fb, type: 3}
 --- !u!1 &736681618
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +644,7 @@ Transform:
   m_GameObject: {fileID: 1140639761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.4, y: 0, z: 12.8}
+  m_LocalPosition: {x: 22.4, y: -0.1, z: 12.8}
   m_LocalScale: {x: 4.48, y: 1, z: 2.56}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,3 +658,4 @@ SceneRoots:
   - {fileID: 976361607}
   - {fileID: 1140639765}
   - {fileID: 60518045}
+  - {fileID: 186597031}

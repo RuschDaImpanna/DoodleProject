@@ -52,7 +52,7 @@ public class grid
         return gridArray[x, y];
     }
  
-    public void SetEntity(int x, int y, GameObject entity, Vector3 rotation)
+    public void SetEntity(int x, int y, string entity, Vector3 rotation)
     {
         if (!InBounds(x, y)) return;
         gridArray[x, y].entity = entity;

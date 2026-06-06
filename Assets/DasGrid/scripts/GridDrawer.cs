@@ -21,9 +21,10 @@ public class GridDrawer : MonoBehaviour
         Gizmos.DrawLine(Bottomleft, Bottomleft + new Vector3(grid.CellSize, 0, 0));
         Gizmos.DrawLine(Bottomleft, Bottomleft + new Vector3(0, 0, grid.CellSize));
 
-        Vector3 Center = Bottomleft + new Vector3(grid.CellSize * 0.5f, 0, grid.CellSize * 0.5f);
-        Handles.Label(Center, "hello");
-    }
+        Vector3 Center = Bottomleft + new Vector3(grid.CellSize * 0.25f, 0, grid.CellSize * 0.5f);
+        ObjectsInGrid cell = grid.GetCell(x, y);
+        Handles.Label(Center, cell.ToString());
 }
     }
+}
 }
