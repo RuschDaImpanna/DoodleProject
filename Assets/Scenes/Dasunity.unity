@@ -277,6 +277,8 @@ MonoBehaviour:
     prefab: {fileID: 8057431600274244032, guid: 88f4b051f35c0e643a7efefcfe7610fb, type: 3}
   - entityName: bee
     prefab: {fileID: 6906825667862158081, guid: 0bbfb3f32fab3b043a6054c087c31afa, type: 3}
+  - entityName: door
+    prefab: {fileID: 343684504096684708, guid: 52b20b88735916a4ebee4bdccb8c354b, type: 3}
 --- !u!1 &319283061
 GameObject:
   m_ObjectHideFlags: 0
