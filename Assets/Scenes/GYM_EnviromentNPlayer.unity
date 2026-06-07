@@ -650,6 +650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverUI
   scoreTxt: {fileID: 1484251338}
+  musicHandler: {fileID: 1382043528}
+  gameOverMusic: {fileID: 8300000, guid: baa3fff75585e8f4993d44e0318fa0c1, type: 3}
 --- !u!1 &954455014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1315,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133828123}
   m_CullTransparentMesh: 1
+--- !u!1 &1382043525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3043190864048089161, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+  m_PrefabInstance: {fileID: 2713196139849310972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1382043527 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5932731297353953037, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+  m_PrefabInstance: {fileID: 2713196139849310972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1382043528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382043525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7afa87df2be9a749bd6a0cd1bddc144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayMusic
+  musicPlayer: {fileID: 1382043527}
 --- !u!1 &1390264192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,10 +2245,17 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.00005
       objectReference: {fileID: 0}
+    - target: {fileID: 5932731297353953037, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+      propertyPath: m_Volume
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3043190864048089161, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1382043528}
   m_SourcePrefab: {fileID: 100100000, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
 --- !u!1001 &2745953798233458382
 PrefabInstance:
