@@ -546,6 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de372bf3b7eea0149b7935aa5c437b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarScript
+  slider: {fileID: 0}
 --- !u!1 &954455014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1585,7 @@ GameObject:
   - component: {fileID: 2081376846}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
