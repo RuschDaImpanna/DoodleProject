@@ -10,9 +10,13 @@ public class GridCutter : MonoBehaviour
     private grid interactableGrid;
     private Drawer drawer = new Drawer();
 
+    public PlayMusic music;
+    public AudioClip theme;
+
     private void Start()
     {
         SetGrids(structuremap.structureGrid, interactablemap.interactableGrid);
+        music.playMusic(theme);
     }
 
     public void SetGrids(grid structure, grid interactable)
