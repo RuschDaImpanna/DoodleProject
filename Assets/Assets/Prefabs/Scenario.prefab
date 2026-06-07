@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de372bf3b7eea0149b7935aa5c437b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarScript
-  slider: {fileID: 0}
+  slider: {fileID: 5168503878221888129}
 --- !u!1 &6948759549423499258
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +797,7 @@ GameObject:
   - component: {fileID: 8679767285250959343}
   - component: {fileID: 6743661451334218355}
   - component: {fileID: 1242641390874017237}
+  - component: {fileID: 7711664978131493622}
   m_Layer: 5
   m_Name: Score Display
   m_TagString: Untagged
@@ -923,6 +924,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7711664978131493622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948759549423499258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6f6bcb45d90c64fbdb410f0da8d54d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoringScript
+  text: {fileID: 1242641390874017237}
 --- !u!1 &8060137643494458355
 GameObject:
   m_ObjectHideFlags: 0
