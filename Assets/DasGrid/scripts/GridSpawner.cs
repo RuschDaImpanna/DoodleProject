@@ -38,4 +38,20 @@ public class GridSpawner : MonoBehaviour
         }
         
     }
+    public void SpawnSingleEntity(int x, int y, string entityName, Vector3 rotation)
+    {
+        if (entityName == "NULL") return;
+    
+        Vector3 spawnPosition = grid.GetWorldPosition(x, y) + new Vector3(grid.CellSize * 0.5f, 0, grid.CellSize * 0.5f);
+
+        foreach (EntityPrefab ep in entities)
+        {
+            if (ep.entityName == entityName)
+            {
+                Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(rotation));
+                break;
+            }
+        }
+    }
 }
+
