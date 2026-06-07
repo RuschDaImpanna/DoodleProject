@@ -1,0 +1,4 @@
+door_01,room_02,door_02
+door_02,room_01,door_01
+door_05,room_03,door_06
+door_06,room_02,door_05

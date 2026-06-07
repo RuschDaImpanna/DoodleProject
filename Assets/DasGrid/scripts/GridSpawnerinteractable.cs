@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
+
 public class GridSpawnerinteractable : MonoBehaviour
 {
-        [System.Serializable]
+    [System.Serializable]
     public class EntityPrefab
     {
         public string entityName;
@@ -11,17 +12,19 @@ public class GridSpawnerinteractable : MonoBehaviour
     }
     public EntityPrefab[] entities;
     private grid grid;
+    private List<GameObject> spawnedObjects = new List<GameObject>();
 
     public void SetGrid(grid grid)
     {
         this.grid = grid;
     }
+
     public void SpawnEntities()
     {
         for (int x = 0; x < grid.Width; x++)
         {
             for (int y = 0; y < grid.Height; y++)
-        {
+            {
                 ObjectsInGrid cell = grid.GetCell(x, y);
                 if (cell.entity == "NULL") continue;
                 Vector3 spawnPosition = grid.GetWorldPosition(x, y) + new Vector3(grid.CellSize * 0.5f, 0.1f, grid.CellSize * 0.5f);
@@ -32,6 +35,7 @@ public class GridSpawnerinteractable : MonoBehaviour
                     if (cell.entity.StartsWith(ep.entityName))
                     {
                         GameObject spawned = Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(cell.rotation));
+                        spawnedObjects.Add(spawned);
                         Debug.Log($"Spawned: {spawned.name}, ChestData: {spawned.GetComponent<ChestData>()}");
                         if (cell.entity.StartsWith("chest"))
                         {
@@ -65,11 +69,10 @@ public class GridSpawnerinteractable : MonoBehaviour
                 chestData.Initialize(chestName, isOpen, items);
                 Debug.Log($"Initialized {chestName} — open: {isOpen}, items: {string.Join(", ", items)}");
                 return;
-            
             }
         }
-    
     }
+
     public void SpawnSingleEntity(int x, int y, string entityName, Vector3 rotation)
     {
         if (entityName == "NULL") return;
@@ -81,6 +84,7 @@ public class GridSpawnerinteractable : MonoBehaviour
             if (entityName.StartsWith(ep.entityName))
             {
                 GameObject spawned = Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(rotation));
+                spawnedObjects.Add(spawned);
 
                 if (entityName.StartsWith("chest"))
                 {
@@ -96,13 +100,14 @@ public class GridSpawnerinteractable : MonoBehaviour
             }
         }
     }
+
     private void FindDoorData(string doorID, DoorData doorData)
     {
         string path = Application.streamingAssetsPath + "/doors.txt";
         string[] lines = File.ReadAllLines(path);
 
         foreach (string line in lines)
-        {   
+        {
             string[] data = line.Split(',');
             if (data[0] == doorID)
             {
@@ -112,5 +117,11 @@ public class GridSpawnerinteractable : MonoBehaviour
             }
         }
     }
-}
 
+    public void ClearSpawned()
+    {
+        foreach (GameObject obj in spawnedObjects)
+            Destroy(obj);
+        spawnedObjects.Clear();
+    }
+}

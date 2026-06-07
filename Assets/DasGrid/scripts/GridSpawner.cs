@@ -1,8 +1,9 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GridSpawner : MonoBehaviour
 {
-        [System.Serializable]
+    [System.Serializable]
     public class EntityPrefab
     {
         public string entityName;
@@ -10,12 +11,14 @@ public class GridSpawner : MonoBehaviour
     }
     public EntityPrefab[] entities;
     private grid grid;
+    private List<GameObject> spawnedObjects = new List<GameObject>();
 
     public void SetGrid(grid grid)
     {
         this.grid = grid;
         SpawnEntities();
     }
+
     public void SpawnEntities()
     {
         for (int x = 0; x < grid.Width; x++)
@@ -30,14 +33,15 @@ public class GridSpawner : MonoBehaviour
                 {
                     if (ep.entityName == cell.entity)
                     {
-                        Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(cell.rotation));
+                        GameObject spawned = Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(cell.rotation));
+                        spawnedObjects.Add(spawned);
                         break;
                     }
                 }
             }
         }
-        
     }
+
     public void SpawnSingleEntity(int x, int y, string entityName, Vector3 rotation)
     {
         if (entityName == "NULL") return;
@@ -48,10 +52,17 @@ public class GridSpawner : MonoBehaviour
         {
             if (ep.entityName == entityName)
             {
-                Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(rotation));
+                GameObject spawned = Instantiate(ep.prefab, spawnPosition, Quaternion.Euler(rotation));
+                spawnedObjects.Add(spawned);
                 break;
             }
         }
     }
-}
 
+    public void ClearSpawned()
+    {
+        foreach (GameObject obj in spawnedObjects)
+            Destroy(obj);
+        spawnedObjects.Clear();
+    }
+}
