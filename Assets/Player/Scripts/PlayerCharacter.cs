@@ -25,6 +25,11 @@ public class PlayerCharacter : MonoBehaviour
     public HealthBarScript hb;
     public ScoringScript sc;
 
+    public GameOverUI gameOver;
+
+    public AudioSource sfxPlayer;
+    
+
     private void Awake()
     {
         hb.setMaxHealth(hp);
@@ -148,6 +153,34 @@ public class PlayerCharacter : MonoBehaviour
     
         score += toScore;
         sc.updateScore(score);
+
+    }
+
+    public void healthAssign (int health)
+    {
+
+        hp += health;
+
+        if (hp > 5)
+            hp = 5;
+
+        hb.setMaxHealth(hp);
+
+        if (hp <= 0)
+        {
+            
+            gameOver.setup(score);
+
+        }
+            
+
+
+    }
+
+    public void playSfx (AudioClip sfx)
+    {
+        
+        sfxPlayer.PlayOneShot(sfx);
 
     }
 

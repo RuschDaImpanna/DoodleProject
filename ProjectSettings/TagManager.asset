@@ -9,6 +9,7 @@ TagManager:
   - column
   - enemy
   - chest
+  - Enviroment
   layers:
   - Default
   - TransparentFX
