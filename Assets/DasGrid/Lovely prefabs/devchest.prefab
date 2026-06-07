@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6681312311316728669}
   - component: {fileID: -6599905902946248084}
   - component: {fileID: -1089561693417583152}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: devchest
-  m_TagString: Untagged
+  m_TagString: chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

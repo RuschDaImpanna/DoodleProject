@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4417574424278400929}
   - component: {fileID: 4108634849081280682}
   - component: {fileID: 8497291611054892790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: devfloor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
