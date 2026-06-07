@@ -10,6 +10,32 @@ TagManager:
   - enemy
   - chest
   - DONT CUT IT YOU MADMAN
+  - Carpet
+  - EdgeBushGrass
+  - Grass
+  - OuterSingleBushGrass
+  - OuterBushGrass
+  - InnerBushGrass
+  - EdgeWaterGrass
+  - Bush
+  - EdgeBridgeWater
+  - EdgeBridgeGrass
+  - Floor
+  - EdgeWallFloor
+  - OuterWallFloor
+  - InnerWallFloor
+  - Bridge
+  - Wall
+  - EdgeWallBush
+  - OuterWallBush
+  - OuterWallWater
+  - InnerWallWater
+  - Water
+  - OuterWaterGrass
+  - InnerWaterGrass
+  - EdgeBushWater
+  - OuterBushWater
+  - InnerBushWater
   layers:
   - Default
   - TransparentFX
