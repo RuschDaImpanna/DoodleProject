@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3190489086100912735}
   - component: {fileID: -5060741028496845625}
   - component: {fileID: 3946267595630942088}
+  - component: {fileID: -4090525210732600481}
   m_Layer: 8
   m_Name: door
   m_TagString: Untagged
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343684504096684708}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.0796, y: 2, z: 9.40433}
   m_LocalScale: {x: 0.16, y: 1, z: 0.16}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6049965495790691152
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -126,5 +127,17 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.16, y: 2, z: 0.16}
+  m_Size: {x: 9.5, y: 2, z: 9.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-4090525210732600481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343684504096684708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625cc5560a4cf2846becd3e9c2e6994d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomTransition
