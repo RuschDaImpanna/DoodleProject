@@ -23,14 +23,7 @@ public class GridCutter : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            Cut(2, 2, 3, 3);
-        }
-        if (Keyboard.current.pKey.wasPressedThisFrame)
-        {
-            Paste(10, 10, 0, structureSpawner, interactableSpawner);
-        }
+        
     }
 
     private void OnApplicationQuit()
