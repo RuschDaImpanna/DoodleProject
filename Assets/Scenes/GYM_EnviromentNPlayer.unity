@@ -187,7 +187,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de372bf3b7eea0149b7935aa5c437b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarScript
-  slider: {fileID: 0}
+--- !u!1 &747106173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4363840664398710072, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+  m_PrefabInstance: {fileID: 2713196139849310972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &747106177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747106173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08086758, y: 0.049866028, z: 0.00001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &954455014
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +749,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4363840664398710072, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 747106177}
   m_SourcePrefab: {fileID: 100100000, guid: 1d87004acee28cb42b96ce202c6e68e7, type: 3}
 --- !u!1001 &2745953798233458382
 PrefabInstance:
