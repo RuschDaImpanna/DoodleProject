@@ -12,15 +12,20 @@ public class PlayerCharacter : MonoBehaviour
     private Rigidbody rb;
     private Transform transformObj;
 
-    public int hp = 5;
+    public float hp = 5;
     public int score = 0;
 
     public GameObject attackChild;
     private Transform attackPlace;
     [SerializeField] private LayerMask interactablesLayer;
 
+    public HealthBarScript hb;
+
     private void Awake()
     {
+
+        hb.setMaxHealth(hp);
+
         attackPlace = attackChild.GetComponent<Transform>();
         playerActions = new InputSystem_Actions();
         rb = GetComponent<Rigidbody>();
