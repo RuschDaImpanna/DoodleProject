@@ -7,6 +7,7 @@ public class RoomTransition : MonoBehaviour
     private structuremap structureAssembler;
     private interactablemap interactableAssembler;
     private Transform player;
+    private bool isTransitioning = false;
 
 private void Start()
 {
@@ -18,8 +19,11 @@ private void Start()
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"doorData.doorID: '{doorData.doorID}' dest room: '{doorData.destinationRoom}' dest door: '{doorData.destinationDoor}'");
+        if (isTransitioning) return;
         if (other.CompareTag("Player"))
         {
+            isTransitioning = true;
             LoadRoom(doorData.destinationRoom, doorData.destinationDoor);
         }
     }
@@ -45,7 +49,7 @@ private void Start()
     {
         if (door.doorID == destinationDoorID)
         {
-            player.position = door.transform.position;
+            player.position = door.transform.position + door.transform.forward * -1.8f;
             return;
         }
     }

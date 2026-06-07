@@ -101,9 +101,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3161189690507186053}
   - component: {fileID: 5845837397225815561}
-  - component: {fileID: 4161303208974690669}
   - component: {fileID: 4640155074152262791}
   - component: {fileID: 6283281956943954540}
+  - component: {fileID: 3181442532218531014}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -120,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 6114753429677840879}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.38, y: 16.56, z: -8.68}
+  m_LocalPosition: {x: -1.38, y: 16.576, z: -8.68}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -186,27 +186,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!65 &4161303208974690669
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6114753429677840879}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.75, y: 0.85, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4640155074152262791
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -255,3 +234,26 @@ MonoBehaviour:
   attackRange: 2
   hb: {fileID: 0}
   sc: {fileID: 0}
+--- !u!136 &3181442532218531014
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6114753429677840879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.53124267
+  m_Height: 1.52
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -0.15}
