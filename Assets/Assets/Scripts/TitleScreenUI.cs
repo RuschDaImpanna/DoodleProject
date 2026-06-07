@@ -18,7 +18,7 @@ public class TitleScreenUI : MonoBehaviour
     public void playGame ()
     {
         
-        SceneManager.LoadScene("GameRun");
+        SceneManager.LoadScene("Dasunity");
 
     }
     
@@ -28,7 +28,7 @@ public class TitleScreenUI : MonoBehaviour
         SceneManager.LoadScene("Credits");
 
     }*/
-    
+
 
     public void exitGame ()
     {

@@ -10,7 +10,7 @@ public class interactablemap : MonoBehaviour
         interactableGrid = new grid(28, 16, 1.6f, Vector3.zero);
         GetComponent<GridDrawer>().setGrid(interactableGrid);
 
-        string path = Application.streamingAssetsPath + "/testroom_01_interactables.txt";
+        string path = Application.streamingAssetsPath + "/R00_interactables.txt";
         string[] lines = File.ReadAllLines(path);
         for (int y = 0; y < lines.Length; y++)
         {

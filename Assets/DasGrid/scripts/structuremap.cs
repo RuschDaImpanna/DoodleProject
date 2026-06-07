@@ -11,7 +11,7 @@ public class structuremap : MonoBehaviour
         GetComponent<GridDrawer>().setGrid(structureGrid);
         GetComponent<GridSpawner>().SetGrid(structureGrid);
 
-        string path = Application.streamingAssetsPath + "/testroom_01_structures.txt";
+        string path = Application.streamingAssetsPath + "/R00_structures.txt";
         string[] lines = File.ReadAllLines(path);
         for (int y = 0; y < lines.Length; y++)
         {
