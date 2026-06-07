@@ -197,7 +197,7 @@ MonoBehaviour:
   - entityName: wall
     prefab: {fileID: 6068649498992975658, guid: b151c616be667224a876c904d193ecd1, type: 3}
   - entityName: column
-    prefab: {fileID: 6068649498992975658, guid: b151c616be667224a876c904d193ecd1, type: 3}
+    prefab: {fileID: 7392179252070742876, guid: 634df7541b62b294a9e9ba2fc47ff75b, type: 3}
   - entityName: arbusto
     prefab: {fileID: 1006212765969306680, guid: a50485d81b489f84e994aed508444fea, type: 3}
 --- !u!1 &186597027
@@ -1172,6 +1172,8 @@ MonoBehaviour:
     prefab: {fileID: 9121252732928449034, guid: 835a2bc2181225e4592131f48592eaae, type: 3}
   - entityName: wall
     prefab: {fileID: 9121252732928449034, guid: 835a2bc2181225e4592131f48592eaae, type: 3}
+  - entityName: column_ghost
+    prefab: {fileID: 2877687604069070178, guid: a6495e031b03f9544a4bd7f18f88e1d4, type: 3}
   interactableEntities:
   - entityName: enemy
     prefab: {fileID: 1425280344954907447, guid: 8c841c172ac74764f958b53d00227614, type: 3}
