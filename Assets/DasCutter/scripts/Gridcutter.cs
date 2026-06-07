@@ -1,20 +1,45 @@
 using UnityEngine;
 using System.IO;
+using UnityEngine.InputSystem;
 
 public class GridCutter : MonoBehaviour
 {
+    public GridSpawner structureSpawner;
+    public GridSpawnerinteractable interactableSpawner;
     private grid structureGrid;
     private grid interactableGrid;
     private Drawer drawer = new Drawer();
+
     private void Start()
-{
-    SetGrids(structuremap.structureGrid, interactablemap.interactableGrid);
-}
+    {
+        SetGrids(structuremap.structureGrid, interactablemap.interactableGrid);
+    }
 
     public void SetGrids(grid structure, grid interactable)
     {
         this.structureGrid = structure;
         this.interactableGrid = interactable;
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Cut(2, 2, 3, 3);
+        }
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            Paste(10, 10, 0, structureSpawner, interactableSpawner);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        string structPath = Application.streamingAssetsPath + "/clipboard_structure.txt";
+        string interactPath = Application.streamingAssetsPath + "/clipboard_interactable.txt";
+
+        if (File.Exists(structPath)) File.Delete(structPath);
+        if (File.Exists(interactPath)) File.Delete(interactPath);
     }
 
     public void Cut(int originX, int originY, int width, int height)
@@ -37,7 +62,6 @@ public class GridCutter : MonoBehaviour
                     + new Vector3(structureGrid.CellSize * 0.5f, 0.5f, structureGrid.CellSize * 0.5f);
                 Vector3 halfExtents = new Vector3(structureGrid.CellSize * 0.4f, 0.5f, structureGrid.CellSize * 0.4f);
 
-                // scan structure layer
                 Collider[] structHits = Physics.OverlapBox(cellCenter, halfExtents, Quaternion.identity, structureMask);
                 foreach (Collider hit in structHits)
                 {
@@ -46,7 +70,6 @@ public class GridCutter : MonoBehaviour
                     Destroy(hit.gameObject);
                 }
 
-                // scan interactable layer
                 Collider[] interactHits = Physics.OverlapBox(cellCenter, halfExtents, Quaternion.identity, interactableMask);
                 foreach (Collider hit in interactHits)
                 {
@@ -55,7 +78,7 @@ public class GridCutter : MonoBehaviour
                     Destroy(hit.gameObject);
                 }
 
-                // clear grid arrays
+                Debug.Log($"scanning cell {originX + x},{originY + y} — struct hits: {structHits.Length}, interact hits: {interactHits.Length}");
                 structureGrid.ClearCell(originX + x, originY + y);
                 interactableGrid.ClearCell(originX + x, originY + y);
             }
@@ -76,8 +99,11 @@ public class GridCutter : MonoBehaviour
             for (int x = 0; x < chunk.width; x++)
             {
                 string sep = x < chunk.width - 1 ? "," : "";
-                structureSB.Append($"{chunk.structureLayer[x, y].entity}-{chunk.structureLayer[x, y].rotation.y:F0}{sep}");
-                interactableSB.Append($"{chunk.interactableLayer[x, y].entity}-{chunk.interactableLayer[x, y].rotation.y:F0}{sep}");
+                string structEntity = string.IsNullOrEmpty(chunk.structureLayer[x, y].entity) ? "NULL" : chunk.structureLayer[x, y].entity;
+                string interactEntity = string.IsNullOrEmpty(chunk.interactableLayer[x, y].entity) ? "NULL" : chunk.interactableLayer[x, y].entity;
+
+                structureSB.Append($"{structEntity}-{chunk.structureLayer[x, y].rotation.y:F0}{sep}");
+                interactableSB.Append($"{interactEntity}-{chunk.interactableLayer[x, y].rotation.y:F0}{sep}");
             }
             structureSB.AppendLine();
             interactableSB.AppendLine();
@@ -98,20 +124,23 @@ public class GridCutter : MonoBehaviour
 
         Gridchunk chunk = drawer.chunks[chunkIndex];
 
-        // read clipboard files and spawn at offset
         string structPath = Application.streamingAssetsPath + "/clipboard_structure.txt";
         string interactPath = Application.streamingAssetsPath + "/clipboard_interactable.txt";
 
         string[] structLines = File.ReadAllLines(structPath);
         string[] interactLines = File.ReadAllLines(interactPath);
+        Debug.Log($"struct lines: {structLines.Length}, interact lines: {interactLines.Length}");
 
         for (int y = 0; y < structLines.Length; y++)
         {
+            if (string.IsNullOrWhiteSpace(structLines[y])) continue;
             string[] structCells = structLines[y].Split(',');
             string[] interactCells = interactLines[y].Split(',');
 
             for (int x = 0; x < structCells.Length; x++)
             {
+                Debug.Log($"structCell: '{structCells[x]}' interactCell: '{interactCells[x]}'");
+
                 // destroy whatever is already at the paste destination
                 Vector3 cellCenter = structureGrid.GetWorldPosition(pasteX + x, pasteY + y)
                     + new Vector3(structureGrid.CellSize * 0.5f, 0.5f, structureGrid.CellSize * 0.5f);
@@ -123,6 +152,7 @@ public class GridCutter : MonoBehaviour
 
                 // paste structure
                 string[] structData = structCells[x].Split('-');
+                Debug.Log($"structData length: {structData.Length}, value: '{structCells[x]}'");
                 string structEntity = structData[0];
                 float structRot = float.Parse(structData[1]);
                 structureGrid.SetEntity(pasteX + x, pasteY + y, structEntity, new Vector3(0, structRot, 0));
@@ -130,6 +160,7 @@ public class GridCutter : MonoBehaviour
 
                 // paste interactable
                 string[] interactData = interactCells[x].Split('-');
+                Debug.Log($"interactData length: {interactData.Length}, value: '{interactCells[x]}'");
                 string interactEntity = interactData[0];
                 float interactRot = float.Parse(interactData[1]);
                 interactableGrid.SetEntity(pasteX + x, pasteY + y, interactEntity, new Vector3(0, interactRot, 0));

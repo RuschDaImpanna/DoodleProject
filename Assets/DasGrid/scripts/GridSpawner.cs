@@ -41,7 +41,7 @@ public class GridSpawner : MonoBehaviour
     public void SpawnSingleEntity(int x, int y, string entityName, Vector3 rotation)
     {
         if (entityName == "NULL") return;
-    
+        Debug.Log($"trying to spawn: '{entityName}'");
         Vector3 spawnPosition = grid.GetWorldPosition(x, y) + new Vector3(grid.CellSize * 0.5f, 0, grid.CellSize * 0.5f);
 
         foreach (EntityPrefab ep in entities)
