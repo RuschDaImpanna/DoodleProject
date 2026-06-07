@@ -10,23 +10,39 @@ public class PlayerCharacter : MonoBehaviour
     private InputSystem_Actions playerActions;
     private float speed = 3;
     private Rigidbody rb;
-    private Transform transformObj;
 
     public float hp = 5;
     public int score = 0;
+    private Transform transformObj;
+
 
     public GameObject attackChild;
     private Transform attackPlace;
     [SerializeField] private LayerMask interactablesLayer;
+    public float attackRange;
+    private Vector3 attackHitbox;
 
     public HealthBarScript hb;
+    public ScoringScript sc;
 
     private void Awake()
     {
-
         hb.setMaxHealth(hp);
 
-        attackPlace = attackChild.GetComponent<Transform>();
+        attackPlace = attackChild.transform;
+
+        if (attackPlace.localPosition.y != 0)
+        {
+            
+            attackHitbox = new Vector3(0.5f, 0.5f, attackRange);
+
+        } else if (attackPlace.localPosition.x != 0)
+        {
+            
+            attackHitbox = new Vector3(attackRange, 0.5f, 0.5f);
+
+        }
+
         playerActions = new InputSystem_Actions();
         rb = GetComponent<Rigidbody>();
         transformObj = GetComponent<Transform>();
@@ -66,18 +82,21 @@ public class PlayerCharacter : MonoBehaviour
         {
             
             attackPlace.localPosition = new Vector3 (0, 0.65f, 0);
+            attackHitbox = new Vector3(0.5f, 0.5f, attackRange);
 
         }
         else if (move.y < 0)
         {
 
             attackPlace.localPosition = new Vector3(0, -0.65f, 0);
+            attackHitbox = new Vector3(0.5f, 0.5f, attackRange);
 
         }
         else if (move.x != 0)
         {
 
             attackPlace.localPosition = new Vector3 (0.65f, 0, 0);
+            attackHitbox = new Vector3(attackRange, 0.5f, 0.5f);
 
         }
 
@@ -99,6 +118,36 @@ public class PlayerCharacter : MonoBehaviour
     {
 
         Debug.Log("attack");
+
+        Collider[] hits = Physics.OverlapBox(attackPlace.position, attackHitbox, Quaternion.identity, interactablesLayer);
+
+        foreach (Collider hit in hits)
+        {
+
+            Debug.Log("Detectado: " + hit.gameObject.name);
+            scoreDraw(0);
+
+        }
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+
+        if (attackChild == null) return;
+
+        Gizmos.color = Color.red;
+        Matrix4x4 oldMatrix = Gizmos.matrix;
+
+        Gizmos.DrawWireCube(attackChild.transform.position, attackHitbox);
+
+    }
+
+    private void scoreDraw(int toScore)
+    {
+    
+        score += toScore;
+        sc.updateScore(score);
 
     }
 
