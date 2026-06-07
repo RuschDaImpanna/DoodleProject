@@ -412,6 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2919162308178999010}
   - component: {fileID: 5932731297353953037}
+  - component: {fileID: 7561968123742850920}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Enviroment
@@ -447,7 +448,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -531,6 +532,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7561968123742850920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043190864048089161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7afa87df2be9a749bd6a0cd1bddc144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayMusic
+  musicPlayer: {fileID: 5932731297353953037}
 --- !u!1 &3577404991735092303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1325,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.08086758, y: 0.049866028, z: 0.0005}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.00005}
 --- !u!114 &3706464560934612053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,6 +1338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa3aad490a6ce44186474616f106c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathBoxScript
+  fallSfx: {fileID: 8300000, guid: f2e248ce0ceaa0d48a323eebb5ebc9ca, type: 3}
   player: {fileID: 0}
 --- !u!1 &7317125536548764501 stripped
 GameObject:
