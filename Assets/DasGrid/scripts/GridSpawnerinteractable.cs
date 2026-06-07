@@ -38,6 +38,11 @@ public class GridSpawnerinteractable : MonoBehaviour
                             ChestData chestData = spawned.GetComponent<ChestData>();
                             FindChestData(cell.entity, chestData);
                         }
+                        if (cell.entity.StartsWith("door"))
+                        {
+                            DoorData doorData = spawned.GetComponent<DoorData>();
+                            FindDoorData(cell.entity, doorData);
+                        }
                         break;
                     }
                 }
@@ -57,7 +62,6 @@ public class GridSpawnerinteractable : MonoBehaviour
             {
                 bool isOpen = data[1] == "open";
                 List<string> items = new List<string>(data[2].Split('-'));
-                chestData.Initialize(chestName, isOpen, items);
                 chestData.Initialize(chestName, isOpen, items);
                 Debug.Log($"Initialized {chestName} — open: {isOpen}, items: {string.Join(", ", items)}");
                 return;
@@ -83,7 +87,28 @@ public class GridSpawnerinteractable : MonoBehaviour
                     ChestData chestData = spawned.GetComponent<ChestData>();
                     FindChestData(entityName, chestData);
                 }
+                if (entityName.StartsWith("door"))
+                {
+                    DoorData doorData = spawned.GetComponent<DoorData>();
+                    FindDoorData(entityName, doorData);
+                }
                 break;
+            }
+        }
+    }
+    private void FindDoorData(string doorID, DoorData doorData)
+    {
+        string path = Application.streamingAssetsPath + "/doors.txt";
+        string[] lines = File.ReadAllLines(path);
+
+        foreach (string line in lines)
+        {   
+            string[] data = line.Split(',');
+            if (data[0] == doorID)
+            {
+                doorData.Initialize(doorID, data[1], data[2]);
+                Debug.Log($"Initialized {doorID} → {data[1]} at {data[2]}");
+                return;
             }
         }
     }
