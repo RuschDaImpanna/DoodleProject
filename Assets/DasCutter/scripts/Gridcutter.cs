@@ -58,6 +58,7 @@ public class GridCutter : MonoBehaviour
                 Collider[] structHits = Physics.OverlapBox(cellCenter, halfExtents, Quaternion.identity, structureMask);
                 foreach (Collider hit in structHits)
                 {
+                    if (hit.gameObject.layer == LayerMask.NameToLayer("NoCut")) continue;
                     chunk.structureLayer[x, y].entity = hit.tag;
                     chunk.structureLayer[x, y].rotation = hit.transform.eulerAngles;
                     Destroy(hit.gameObject);
@@ -66,6 +67,7 @@ public class GridCutter : MonoBehaviour
                 Collider[] interactHits = Physics.OverlapBox(cellCenter, halfExtents, Quaternion.identity, interactableMask);
                 foreach (Collider hit in interactHits)
                 {
+                    if (hit.gameObject.layer == LayerMask.NameToLayer("NoCut")) continue;
                     chunk.interactableLayer[x, y].entity = hit.tag;
                     chunk.interactableLayer[x, y].rotation = hit.transform.eulerAngles;
                     Destroy(hit.gameObject);
