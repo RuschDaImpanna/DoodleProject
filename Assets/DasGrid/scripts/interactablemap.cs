@@ -8,7 +8,7 @@ public class interactablemap : MonoBehaviour
     {
       grid grid = new grid(28, 16, 1.6f, Vector3.zero);  
       GetComponent<GridDrawer>().setGrid(grid);
-      GetComponent<GridSpawnerinteractable>().SetGrid(grid);
+      
       
       string path = Application.streamingAssetsPath + "/map1interactables.txt";
       string[] lines = File.ReadAllLines(path);
@@ -23,6 +23,7 @@ float rotation = float.Parse(cellData[1]);
 grid.SetEntity(x, y, entityName, new Vector3(0, rotation, 0));
     }
 }
+      GetComponent<GridSpawnerinteractable>().SetGrid(grid);
       GetComponent<GridSpawnerinteractable>().SpawnEntities();
     }
     

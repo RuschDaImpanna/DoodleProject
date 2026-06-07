@@ -1,0 +1,3 @@
+chest_01,closed,sword-shield
+chest_02,closed,potion
+chest_03,closed,empty
