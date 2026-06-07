@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1282b4e4736cc646a430cb40eb52127
+guid: eea892b57e7338a4f8fb8f30a3ba6944
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flower.idle_0
+      name: Bee.idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a7893e57fd7aa4cba0ff67c586956d
-      internalID: 689379906
+      spriteID: 83b0f40ad3ac46e46af2eb481306cc01
+      internalID: -1264826774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_1
+      name: Bee.idle_1
       rect:
         serializedVersion: 2
         x: 280
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf9a4ab2601d484d9c3f017505a1c6e
-      internalID: 674406779
+      spriteID: 45198374ecfe30145b0fd7d4827c8c32
+      internalID: -655221021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_2
+      name: Bee.idle_2
       rect:
         serializedVersion: 2
         x: 560
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176478eba5c44d84a9bcf621660442cd
-      internalID: 1092853323
+      spriteID: ebf501dd565d8764e9f35bf10e893b2e
+      internalID: 1939229637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_3
+      name: Bee.idle_3
       rect:
         serializedVersion: 2
         x: 840
@@ -178,14 +178,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8910b83500b8fe84aa8bfe538bfbe435
-      internalID: -693506830
+      spriteID: 97ef255515708b04bb7679d7a364b312
+      internalID: 384785129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_4
+      name: Bee.idle_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2b9089881f4214fb631628df57e8b7
+      internalID: -1657439043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.idle_5
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6681f8af4a870d74b98f6fbb9cdc6113
-      internalID: 1011219596
+      spriteID: f9c7c10f6e045134e8858ce3b55fd0c6
+      internalID: 1701790504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_5
+      name: Bee.idle_6
       rect:
         serializedVersion: 2
         x: 280
@@ -222,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1f606aaf6ddbc84b8dfe938445c6ddf
-      internalID: -213952648
+      spriteID: 5959bb2ee11fa0a4a8a5c8381f660c3d
+      internalID: 9761604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_6
+      name: Bee.idle_7
       rect:
         serializedVersion: 2
         x: 560
@@ -244,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671c340a6ea4a364abc2deaae8396187
-      internalID: -1171237868
+      spriteID: b68e22fb8f04b3e488b91d09475c17b3
+      internalID: -450493389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_7
+      name: Bee.idle_8
       rect:
         serializedVersion: 2
         x: 840
@@ -266,14 +288,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19c68e48841235949afe36e6968286ce
-      internalID: 1053042737
+      spriteID: c066b580db74652459096b1bd3285eb1
+      internalID: 280469861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_8
+      name: Bee.idle_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06573b5c13024654ea0f116c137d7295
+      internalID: 1659711910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.idle_10
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf46fc3ea7776a4c9ec5f349d0d9327
-      internalID: 314926076
+      spriteID: 4170705a37522dc4993626e3306461b7
+      internalID: 571778537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_9
+      name: Bee.idle_11
       rect:
         serializedVersion: 2
         x: 280
@@ -310,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca9514343b3c454cae5f469fb1719da
-      internalID: 454846536
+      spriteID: 88416119906387c4889c4e37b7f0eef5
+      internalID: -1871379750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_10
+      name: Bee.idle_12
       rect:
         serializedVersion: 2
         x: 560
@@ -332,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3b2f3e7cdc02b24da2295c4540b3bc3
-      internalID: -664716678
+      spriteID: e633a4b180afa704388d82fd526bb35f
+      internalID: -391562140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_11
+      name: Bee.idle_13
       rect:
         serializedVersion: 2
         x: 840
@@ -354,14 +398,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a29c396ade8e44e91966cf4b163653
-      internalID: 1584004142
+      spriteID: c5015fcea72dc724c8c06d59496668fd
+      internalID: -36042562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_12
+      name: Bee.idle_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35bb61b1837501488c063f7f53bef69
+      internalID: 1417761032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.idle_15
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86516f4c9bbc32e449b712ad13fd5cf8
-      internalID: -310971484
+      spriteID: 1fb3b3929b0dae246971595a412fb827
+      internalID: -1553983954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_13
+      name: Bee.idle_16
       rect:
         serializedVersion: 2
         x: 280
@@ -398,52 +464,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda7a051394133143a4712e027c5bceb
-      internalID: 605655423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower.idle_14
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 280
-        height: 280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c3e31098d1b80a4db9cb6472173be0f
-      internalID: 1825217664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower.idle_15
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 280
-        height: 280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 064fed8a6fe9f8d4b86600ff14cbb2cd
-      internalID: -2018895536
+      spriteID: 64d720be67a715548a05d1d65130253b
+      internalID: -626732443
       vertices: []
       indices: 
       edges: []
@@ -452,7 +474,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ccc156c572c4b4448abf675b7f2507c7
+    spriteID: 0c69bcb91d8cde54c96e25638d15e8c7
     internalID: 0
     vertices: []
     indices: 
@@ -464,22 +486,23 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Flower.idle_0: 689379906
-      Flower.idle_1: 674406779
-      Flower.idle_10: -664716678
-      Flower.idle_11: 1584004142
-      Flower.idle_12: -310971484
-      Flower.idle_13: 605655423
-      Flower.idle_14: 1825217664
-      Flower.idle_15: -2018895536
-      Flower.idle_2: 1092853323
-      Flower.idle_3: -693506830
-      Flower.idle_4: 1011219596
-      Flower.idle_5: -213952648
-      Flower.idle_6: -1171237868
-      Flower.idle_7: 1053042737
-      Flower.idle_8: 314926076
-      Flower.idle_9: 454846536
+      Bee.idle_0: -1264826774
+      Bee.idle_1: -655221021
+      Bee.idle_10: 571778537
+      Bee.idle_11: -1871379750
+      Bee.idle_12: -391562140
+      Bee.idle_13: -36042562
+      Bee.idle_14: 1417761032
+      Bee.idle_15: -1553983954
+      Bee.idle_16: -626732443
+      Bee.idle_2: 1939229637
+      Bee.idle_3: 384785129
+      Bee.idle_4: -1657439043
+      Bee.idle_5: 1701790504
+      Bee.idle_6: 9761604
+      Bee.idle_7: -450493389
+      Bee.idle_8: 280469861
+      Bee.idle_9: 1659711910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

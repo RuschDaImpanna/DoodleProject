@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1282b4e4736cc646a430cb40eb52127
+guid: 8435d8bd86074724db25e3a51152697c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flower.idle_0
+      name: BaldFlower.idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a7893e57fd7aa4cba0ff67c586956d
-      internalID: 689379906
+      spriteID: ba796c761dd168849b05eb5c9b79c4c1
+      internalID: 1211571946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_1
+      name: BaldFlower.idle_1
       rect:
         serializedVersion: 2
         x: 280
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf9a4ab2601d484d9c3f017505a1c6e
-      internalID: 674406779
+      spriteID: 77dc5b5a3953e8946b5dfd5a8112f0c3
+      internalID: 1449462062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_2
+      name: BaldFlower.idle_2
       rect:
         serializedVersion: 2
         x: 560
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176478eba5c44d84a9bcf621660442cd
-      internalID: 1092853323
+      spriteID: 4c2b4d94634c99344b52a9c80411f2d4
+      internalID: -209658922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_3
+      name: BaldFlower.idle_3
       rect:
         serializedVersion: 2
         x: 840
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8910b83500b8fe84aa8bfe538bfbe435
-      internalID: -693506830
+      spriteID: 6d27e9379627fec4283745c5cb6ee497
+      internalID: -2137148279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_4
+      name: BaldFlower.idle_4
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6681f8af4a870d74b98f6fbb9cdc6113
-      internalID: 1011219596
+      spriteID: e380a6562cf51284eb61d34b16645575
+      internalID: 116610371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_5
+      name: BaldFlower.idle_5
       rect:
         serializedVersion: 2
         x: 280
@@ -222,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1f606aaf6ddbc84b8dfe938445c6ddf
-      internalID: -213952648
+      spriteID: b687b74a081ef824f9b42df303d21145
+      internalID: 2044770236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_6
+      name: BaldFlower.idle_6
       rect:
         serializedVersion: 2
         x: 560
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671c340a6ea4a364abc2deaae8396187
-      internalID: -1171237868
+      spriteID: c0858f0b71a51644e87454681160f736
+      internalID: -2105694308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_7
+      name: BaldFlower.idle_7
       rect:
         serializedVersion: 2
         x: 840
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19c68e48841235949afe36e6968286ce
-      internalID: 1053042737
+      spriteID: 43d380382db74a8438d667c6871bfab1
+      internalID: -1828152415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_8
+      name: BaldFlower.idle_8
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf46fc3ea7776a4c9ec5f349d0d9327
-      internalID: 314926076
+      spriteID: 6319af578a42301418009d89631e1df4
+      internalID: 916981157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_9
+      name: BaldFlower.idle_9
       rect:
         serializedVersion: 2
         x: 280
@@ -310,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca9514343b3c454cae5f469fb1719da
-      internalID: 454846536
+      spriteID: 686b1e0e20efe564f983fffe3da5e108
+      internalID: 2040563636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_10
+      name: BaldFlower.idle_10
       rect:
         serializedVersion: 2
         x: 560
@@ -332,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3b2f3e7cdc02b24da2295c4540b3bc3
-      internalID: -664716678
+      spriteID: 89fdfaf15187b944fb3444f833b7349d
+      internalID: 1878718797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_11
+      name: BaldFlower.idle_11
       rect:
         serializedVersion: 2
         x: 840
@@ -354,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a29c396ade8e44e91966cf4b163653
-      internalID: 1584004142
+      spriteID: cfc0c1a40f936c942bbd2847d0d0dc81
+      internalID: 1737780395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_12
+      name: BaldFlower.idle_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,36 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86516f4c9bbc32e449b712ad13fd5cf8
-      internalID: -310971484
+      spriteID: 74a36b09d5b0920488d6c7042b6a3184
+      internalID: 1286955516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_13
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 0
-        width: 280
-        height: 280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dda7a051394133143a4712e027c5bceb
-      internalID: 605655423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower.idle_14
+      name: BaldFlower.idle_14
       rect:
         serializedVersion: 2
         x: 560
@@ -420,14 +398,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c3e31098d1b80a4db9cb6472173be0f
-      internalID: 1825217664
+      spriteID: 3f94b4c5cac1bd84dab193459e2686d3
+      internalID: -759834365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_15
+      name: BaldFlower.idle_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cb2533fc8aac847a20f981221967e7
+      internalID: -943169916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaldFlower.idle_15
       rect:
         serializedVersion: 2
         x: 840
@@ -442,8 +442,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 064fed8a6fe9f8d4b86600ff14cbb2cd
-      internalID: -2018895536
+      spriteID: 3cae2cd8978e36047a79c1a8d4b618c1
+      internalID: 1602975391
       vertices: []
       indices: 
       edges: []
@@ -452,7 +452,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ccc156c572c4b4448abf675b7f2507c7
+    spriteID: 09aa0ec9e8c9a3d4b928d2ba8f2e5c1e
     internalID: 0
     vertices: []
     indices: 
@@ -464,22 +464,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Flower.idle_0: 689379906
-      Flower.idle_1: 674406779
-      Flower.idle_10: -664716678
-      Flower.idle_11: 1584004142
-      Flower.idle_12: -310971484
-      Flower.idle_13: 605655423
-      Flower.idle_14: 1825217664
-      Flower.idle_15: -2018895536
-      Flower.idle_2: 1092853323
-      Flower.idle_3: -693506830
-      Flower.idle_4: 1011219596
-      Flower.idle_5: -213952648
-      Flower.idle_6: -1171237868
-      Flower.idle_7: 1053042737
-      Flower.idle_8: 314926076
-      Flower.idle_9: 454846536
+      BaldFlower.idle_0: 1211571946
+      BaldFlower.idle_1: 1449462062
+      BaldFlower.idle_10: 1878718797
+      BaldFlower.idle_11: 1737780395
+      BaldFlower.idle_12: 1286955516
+      BaldFlower.idle_13: -943169916
+      BaldFlower.idle_14: -759834365
+      BaldFlower.idle_15: 1602975391
+      BaldFlower.idle_2: -209658922
+      BaldFlower.idle_3: -2137148279
+      BaldFlower.idle_4: 116610371
+      BaldFlower.idle_5: 2044770236
+      BaldFlower.idle_6: -2105694308
+      BaldFlower.idle_7: -1828152415
+      BaldFlower.idle_8: 916981157
+      BaldFlower.idle_9: 2040563636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

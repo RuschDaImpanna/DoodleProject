@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1282b4e4736cc646a430cb40eb52127
+guid: a9b715824c6369f43bbfc681c2c91a37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flower.idle_0
+      name: Bee.attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271c6786abb4bed4a9b9aa9a51c28cf8
+      internalID: -893657801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121a2e50e3544b84cbace110e3cb9d7d
+      internalID: -824417551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8f0638a7a967443a482fcc5696bbcb
+      internalID: 1273052780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba542ddec6ded04282a2d294bc4fb78
+      internalID: 154125130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d9fd79a6407c944a7210526f752112
+      internalID: 234802930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250053acccd6d7c4ca5083b2c97fb90c
+      internalID: 2035983750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_6
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a7893e57fd7aa4cba0ff67c586956d
-      internalID: 689379906
+      spriteID: 19ed1408924914c4d8cef30a3ba6716b
+      internalID: 1532156902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_1
+      name: Bee.attack_7
       rect:
         serializedVersion: 2
         x: 280
@@ -134,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf9a4ab2601d484d9c3f017505a1c6e
-      internalID: 674406779
+      spriteID: 1756ab881b9f4f84aaf5a568f1728a11
+      internalID: -1819365343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_2
+      name: Bee.attack_8
       rect:
         serializedVersion: 2
         x: 560
@@ -156,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176478eba5c44d84a9bcf621660442cd
-      internalID: 1092853323
+      spriteID: 0080413411ab6ce419020abe2ca05575
+      internalID: 98359966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_3
+      name: Bee.attack_9
       rect:
         serializedVersion: 2
         x: 840
@@ -178,14 +310,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8910b83500b8fe84aa8bfe538bfbe435
-      internalID: -693506830
+      spriteID: 3e75785d1616b1441a4f885ad2b27af9
+      internalID: 323594990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_4
+      name: Bee.attack_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f738a6ba7ba59bf4da083b1559e244ff
+      internalID: -1052487664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c20e0fde57424d4aa1480ad001cded1
+      internalID: 308384370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_12
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6681f8af4a870d74b98f6fbb9cdc6113
-      internalID: 1011219596
+      spriteID: 2632f2acbfae62447b3e2b145d2cec77
+      internalID: -1859705561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_5
+      name: Bee.attack_13
       rect:
         serializedVersion: 2
         x: 280
@@ -222,14 +398,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1f606aaf6ddbc84b8dfe938445c6ddf
-      internalID: -213952648
+      spriteID: 36f999a9628d9774e949e176cea7be5b
+      internalID: 215580411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_6
+      name: Bee.attack_14
       rect:
         serializedVersion: 2
         x: 560
@@ -244,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671c340a6ea4a364abc2deaae8396187
-      internalID: -1171237868
+      spriteID: 68565043572fa1e418ee95bbadaeff11
+      internalID: -490701124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_7
+      name: Bee.attack_15
       rect:
         serializedVersion: 2
         x: 840
@@ -266,14 +442,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19c68e48841235949afe36e6968286ce
-      internalID: 1053042737
+      spriteID: 2d63c220a34db604e8fccdc6b5a37f2a
+      internalID: -1307794659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_8
+      name: Bee.attack_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84a1ee18b702724493c124c326591ff
+      internalID: 676515981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea68b0ac03efd442a02be986db58a26
+      internalID: 1969890257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_18
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf46fc3ea7776a4c9ec5f349d0d9327
-      internalID: 314926076
+      spriteID: 5887e9d4afe43894f996d77247ed8c14
+      internalID: -942699884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_9
+      name: Bee.attack_19
       rect:
         serializedVersion: 2
         x: 280
@@ -310,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca9514343b3c454cae5f469fb1719da
-      internalID: 454846536
+      spriteID: 2964b1ee57948a843b354d9950eb9817
+      internalID: 428193829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_10
+      name: Bee.attack_20
       rect:
         serializedVersion: 2
         x: 560
@@ -332,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3b2f3e7cdc02b24da2295c4540b3bc3
-      internalID: -664716678
+      spriteID: b51fd9c76cd73604a9a0d694b4f99269
+      internalID: 383619672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_11
+      name: Bee.attack_21
       rect:
         serializedVersion: 2
         x: 840
@@ -354,14 +574,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a29c396ade8e44e91966cf4b163653
-      internalID: 1584004142
+      spriteID: aa0152d806a56834da5dae6119d18ced
+      internalID: -274619110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_12
+      name: Bee.attack_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16d87726442ff3419a1ba6345d6f39e
+      internalID: -370112317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_23
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55694143562b1242b29efa931d3d502
+      internalID: 759959833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee.attack_24
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +640,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86516f4c9bbc32e449b712ad13fd5cf8
-      internalID: -310971484
+      spriteID: 6e4d58041658b5e4a8fb20247acf8edf
+      internalID: -586221102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower.idle_13
+      name: Bee.attack_25
       rect:
         serializedVersion: 2
         x: 280
@@ -398,52 +662,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda7a051394133143a4712e027c5bceb
-      internalID: 605655423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower.idle_14
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 280
-        height: 280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c3e31098d1b80a4db9cb6472173be0f
-      internalID: 1825217664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flower.idle_15
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 280
-        height: 280
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 064fed8a6fe9f8d4b86600ff14cbb2cd
-      internalID: -2018895536
+      spriteID: 146b5ca7583f8644982a2f5f61538aef
+      internalID: -22987717
       vertices: []
       indices: 
       edges: []
@@ -452,7 +672,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ccc156c572c4b4448abf675b7f2507c7
+    spriteID: 7eba6176bd8b3c94e9e6912c7c89e83a
     internalID: 0
     vertices: []
     indices: 
@@ -464,22 +684,32 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Flower.idle_0: 689379906
-      Flower.idle_1: 674406779
-      Flower.idle_10: -664716678
-      Flower.idle_11: 1584004142
-      Flower.idle_12: -310971484
-      Flower.idle_13: 605655423
-      Flower.idle_14: 1825217664
-      Flower.idle_15: -2018895536
-      Flower.idle_2: 1092853323
-      Flower.idle_3: -693506830
-      Flower.idle_4: 1011219596
-      Flower.idle_5: -213952648
-      Flower.idle_6: -1171237868
-      Flower.idle_7: 1053042737
-      Flower.idle_8: 314926076
-      Flower.idle_9: 454846536
+      Bee.attack_0: -893657801
+      Bee.attack_1: -824417551
+      Bee.attack_10: -1052487664
+      Bee.attack_11: 308384370
+      Bee.attack_12: -1859705561
+      Bee.attack_13: 215580411
+      Bee.attack_14: -490701124
+      Bee.attack_15: -1307794659
+      Bee.attack_16: 676515981
+      Bee.attack_17: 1969890257
+      Bee.attack_18: -942699884
+      Bee.attack_19: 428193829
+      Bee.attack_2: 1273052780
+      Bee.attack_20: 383619672
+      Bee.attack_21: -274619110
+      Bee.attack_22: -370112317
+      Bee.attack_23: 759959833
+      Bee.attack_24: -586221102
+      Bee.attack_25: -22987717
+      Bee.attack_3: 154125130
+      Bee.attack_4: 234802930
+      Bee.attack_5: 2035983750
+      Bee.attack_6: 1532156902
+      Bee.attack_7: -1819365343
+      Bee.attack_8: 98359966
+      Bee.attack_9: 323594990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
