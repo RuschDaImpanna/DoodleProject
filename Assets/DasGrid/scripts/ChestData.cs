@@ -1,16 +1,14 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class ChestData : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string chestName;
+    public bool isOpen;
+    public List<string> items;
+    public void Initialize(string name, bool open, List<string> items)
+{
+    this.chestName = name;
+    this.isOpen = open;
+    this.items = items;
+}
 }
